@@ -4,7 +4,7 @@ cask 'dockart' do
 
   name 'DockArt'
   homepage 'http://www.splook.com/Software/DockArt.html'
-  url "http://www.splook.com/Software/DockArt_files/DockArt#{version.split('.').first}.zip"
+  url "http://www.splook.com/Software/DockArt_files/DockArt#{version.split('.').first}.zip", verified: 'www.splook.com'
 
   artifact 'Dockart 2.2/DockArt.bundle', target: "#{ENV['HOME']}/Library/iTunes/iTunes Plug-Ins/DockArt.bundle"
 end
