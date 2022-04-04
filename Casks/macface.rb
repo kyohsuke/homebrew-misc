@@ -2,7 +2,7 @@ cask "macface" do
   version "1.3.2"
   sha256 "39fb3007f011c5ad2b5f3e2c9d924a1a2af17ee476353b37db48f37cf976cad2"
 
-  url "https://github.com/MacFace/MacFace/releases/download/v1.3.2/MacFace-1.3.2.dmg", verified: "github.com"
+  url "https://github.com/MacFace/MacFace/releases/download/v#{version}/MacFace-#{version}.dmg", verified: "github.com"
   name "MacFace"
   desc "Emotional CPU Meter"
   homepage "http://macface.github.io/"
