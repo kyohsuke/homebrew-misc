@@ -4,6 +4,7 @@ cask "macface" do
 
   url "https://github.com/MacFace/MacFace/releases/download/v#{version}/MacFace-#{version}.dmg", verified: "github.com"
   name "MacFace"
+  desc "Emotional CPU Meter"
   homepage "http://macface.github.io/"
 
   app "MacFace.app", target: "/Applications/macface/MacFace.app"
