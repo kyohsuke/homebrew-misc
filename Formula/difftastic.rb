@@ -9,6 +9,7 @@ class Difftastic < Formula
 
   depends_on 'rust' => :build
 
+
   def install
     system 'cargo', 'install', *std_cargo_args
   end
