@@ -17,7 +17,8 @@ jobs:
 
     - name: Update
       uses: sergeysova/jq-action@v2
-      run: bash update.sh
+      with:
+        cmd: bash update.sh
 
     - name: Push to master
       uses: EndBug/add-and-commit@v7
