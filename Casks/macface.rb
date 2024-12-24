@@ -5,7 +5,7 @@ cask "macface" do
   url "https://github.com/MacFace/MacFace/releases/download/v#{version}/MacFace-#{version}.dmg", verified: "github.com/"
   name "MacFace"
   desc "Emotional CPU Meter"
-  homepage "http://macface.github.io/"
+  homepage "https://macface.github.io/"
 
   app "MacFace.app", target: "/Applications/macface/MacFace.app"
 
@@ -14,6 +14,8 @@ cask "macface" do
   end
 
   uninstall_postflight do
-    system_command "/bin/rm", args: ["-rf", "/Applications/macface"]
+    ["kikiki-rin.mcface", "readme.rtf", "顔パターンファイルの作り方.rtf"].each do |filename|
+      system_command "/bin/rm", args: ["-f", "/Applications/macface/#{filename}"]
+    end
   end
 end
