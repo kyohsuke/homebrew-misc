@@ -26,7 +26,7 @@ class Files < Formula
 
   desc "Fast file find"
   homepage "https://github.com/mattn/files"
-  url "https://github.com/mattn/files/releases/download/v#{version}/files_v#{ver}_#{ostype}_#{cputype}.#{ext}"
+  url "https://github.com/mattn/files/releases/download/v#{ver}/files_v#{ver}_#{ostype}_#{cputype}.#{ext}"
   version ver
   license "MIT"
 
