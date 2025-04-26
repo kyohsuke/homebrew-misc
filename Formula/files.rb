@@ -3,6 +3,7 @@ class Files < Formula
   cputype = Hardware::CPU.arch
   cputype = :amd64 if cputype == :x86_64
   ext = "zip"
+  ver = "0.3.9"
 
   case ostype
   when :darwin
@@ -25,8 +26,8 @@ class Files < Formula
 
   desc "Fast file find"
   homepage "https://github.com/mattn/files"
-  url "https://github.com/mattn/files/releases/download/v#{version}/files_v#{version}_#{ostype}_#{cputype}.#{ext}"
-  version "0.3.9"
+  url "https://github.com/mattn/files/releases/download/v#{version}/files_v#{ver}_#{ostype}_#{cputype}.#{ext}"
+  version ver
   license "MIT"
 
   def install
