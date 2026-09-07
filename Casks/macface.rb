@@ -13,7 +13,7 @@ cask "macface" do
     artifact filename, target: "/Applications/macface/#{filename}"
   end
 
-  uninstall_postflight do
+  uninstall_postflight_steps do
     ["kikiki-rin.mcface", "readme.rtf", "顔パターンファイルの作り方.rtf"].each do |filename|
       system_command "/bin/rm", args: ["-f", "/Applications/macface/#{filename}"]
     end
