@@ -32,6 +32,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
 
+      - run: brew trust kyohsuke/misc
+
       - run: brew test-bot --only-cleanup-before
 
       - run: brew test-bot --only-setup
