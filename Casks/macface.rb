@@ -9,13 +9,7 @@ cask "macface" do
 
   app "MacFace.app", target: "/Applications/macface/MacFace.app"
 
-  ["kikiki-rin.mcface", "readme.rtf", "顔パターンファイルの作り方.rtf"].each do |filename|
-    artifact filename, target: "/Applications/macface/#{filename}"
-  end
-
-  uninstall_postflight_steps do
-    ["kikiki-rin.mcface", "readme.rtf", "顔パターンファイルの作り方.rtf"].each do |filename|
-      system_command "/bin/rm", args: ["-f", "/Applications/macface/#{filename}"]
-    end
-  end
+  artifact "kikiki-rin.mcface", target: "/Applications/macface/kikiki-rin.mcface"
+  artifact "readme.rtf", target: "/Applications/macface/readme.rtf"
+  artifact "顔パターンファイルの作り方.rtf", target: "/Applications/macface/顔パターンファイルの作り方.rtf"
 end
