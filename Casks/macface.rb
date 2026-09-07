@@ -8,7 +8,6 @@ cask "macface" do
   homepage "https://macface.github.io/"
 
   app "MacFace.app", target: "/Applications/macface/MacFace.app"
-
   artifact "kikiki-rin.mcface", target: "/Applications/macface/kikiki-rin.mcface"
   artifact "readme.rtf", target: "/Applications/macface/readme.rtf"
   artifact "顔パターンファイルの作り方.rtf", target: "/Applications/macface/顔パターンファイルの作り方.rtf"
